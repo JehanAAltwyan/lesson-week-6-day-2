@@ -2,12 +2,31 @@
 
 // click event for white button
 
+
+
 function switchGray() {
-    // change background to gray
-    // change font to white
+
+  let switcher= $("#switcher");
+  $("body").css("background","gray");
+  $("h1").css("color","white");
+  $("p").css("color","white");
+
 }
 
+
+
 function switchWhite() {
-    // change background to white
-    // change font to black
+
+let switcher =$("#switcher");
+    $("body").css("background","white");
+    $("p").css("color","black");
+    $("h1").css("color","black");
+
 }
+
+
+//switchGray();
+//switchWhite();
+$("#grayButton").on('click',switchGray);
+
+$("#whiteButton").on('click',switchWhite);
